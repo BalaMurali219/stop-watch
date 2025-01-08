@@ -1,0 +1,94 @@
+:root {
+    --primary: hsla(245, 97%, 63%, 0.3);
+    --secondary: hsla(30, 96%, 62%, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    background-image: url("image2.jpg");    
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    user-select: none;
+}
+
+h1 {
+    font-size: 80px;
+    font-style:italic;
+}
+
+#StopWatch {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 50px auto;
+    width: 470px;
+    padding: 10px 20px;
+    background: rgba(47, 34, 34, 0.13);
+    border-radius: 17px;
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    backdrop-filter: blur(4px);
+}
+
+.btn {
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(12, 177, 182, 0.39);
+    color: #ffffff;
+    padding: 5px 30px;
+    margin: 0 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn.start {
+    color: rgb(15, 242, 11);
+    border-radius: 25px;
+}
+
+.btn.stop {
+    display: none;
+    color: rgb(247, 0, 0);
+}
+
+.lap-btn {
+    display: none;
+    border-radius: 25px;
+}
+
+table {
+    display: none;
+    margin: 40px auto;
+    font-size: 25px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 25px;
+    text-align: center;
+}
+
+.bin {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bin:hover {
+    opacity: 1;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    font-size: 13px;
+}
